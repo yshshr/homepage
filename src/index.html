@@ -216,11 +216,21 @@
           />
         </div>
       </div>
-      <img
-        src="../components/my-component/pic/footer.jpg"
-        alt="联系网站作者"
-        width="150"
-      />
+      <picture>
+        <source
+          media="(width > 1200px)"
+          srcset="../components/my-component/pic/footer.jpg"
+        />
+        <source
+          media="(width <= 1200px)"
+          srcset="../components/my-component/pic/footer-portrait.jpg"
+        />
+        <img
+          src="../components/my-component/pic/footer.jpg"
+          alt="联系网站作者"
+          width="150"
+        />
+      </picture>
     </footer>
   </body>
 </html>
